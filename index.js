@@ -3,7 +3,6 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const register = require("./routes/register");
 const login = require("./routes/login");
-const orders = require("./routes/orders");
 const stripe = require("./routes/stripe");
 
 
@@ -18,7 +17,6 @@ app.use(cors());
 
 app.use("/api/register", register);
 app.use("/api/login", login);
-app.use("/api/orders", orders);
 app.use("/api/stripe", stripe);
 
 
